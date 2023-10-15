@@ -4,11 +4,17 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
-	-- file finder
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.4',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+    -- file finder
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
+        requires = { {'nvim-lua/plenary.nvim'} },
+        dependencies = { "nvim-treesitter/nvim-treesitter", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
+    }
+
+    use {
+        'xiyaowong/telescope-emoji.nvim',
+        requires = { {'nvim-telescope/telescope.nvim'} }
+    }
 
     use {
         'NvChad/nvterm',

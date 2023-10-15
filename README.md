@@ -8,6 +8,8 @@ A pretty snazzy neovim setup
 
 * Git
 * Neovim 9.0+
+* Golang for the golang lsp
+* ripgrep for telescope grep finding
 
 ### Instructions
 
