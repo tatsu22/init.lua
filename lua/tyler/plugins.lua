@@ -10,6 +10,13 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+    use {
+        'NvChad/nvterm',
+        config = function()
+            require("nvterm").setup()
+        end,
+    }
+
 	-- theme
 	use { 
 		"catppuccin/nvim", 
@@ -52,7 +59,6 @@ return require('packer').startup(function(use)
 	-- git
 	use {'tpope/vim-fugitive'}
 
-
 	-- LSP and mason
 	use {
 		"williamboman/mason.nvim"
@@ -80,5 +86,13 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+
+    use {
+        "olexsmir/gopher.nvim",
+        requires = { -- dependencies
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
+    },
+}
 end)
 
