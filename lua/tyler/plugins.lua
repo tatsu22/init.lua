@@ -104,8 +104,8 @@ return require('packer').startup(function(use)
     use {
         "olexsmir/gopher.nvim",
         requires = { -- dependencies
-        "nvim-lua/plenary.nvim",
-        "nvim-treesitter/nvim-treesitter",
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
     },
 }
 end)
