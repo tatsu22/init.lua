@@ -22,4 +22,6 @@ Then open `nvim`, navigate to `lua/tyler/plugins.lua`, run `:so` and `:PackerSyn
 
 Close and then reopen vim
 
-Voila
+...
+
+Profit
